@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@700&display=swap" rel="stylesheet"> 
 
     <link rel="stylesheet" href="css/mystyles.css">
     <link rel="stylesheet" href="css/style.css">
@@ -18,12 +19,13 @@
   </head>
   <body>
 
-    <!-- Pasek nawigacyjny -->
+    <!-- ! Pasek nawigacyjny -->
+    
     <nav class="navbar pasekNawigacyjny" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <h1 class="navbar-item firma">
+          <span class="navbar-item firma">
             HYDROBAR
-          </h1>
+          </span>
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -62,19 +64,35 @@
         </div>
       </nav>
 
-      <!-- Sekcja 1 -->
+      <!-- ! Baner -->
+
       <section>
-        <div class="parent">
-          <div class="div1"> 
-            <img src="img/forklift-isolated-white@2x.png" alt="">
+        <div class="kontener">
+            <div class="Naglowek">
+                <h1 class="nazwa">HYDRAULIKA PRZEMYSŁOWA</h1>
+                <h2 class="podnazwa">PAWEŁ FIGIEL</h2>
+            </div>
+            <div class="IMG1">
+                <img src="img/forklift-isolated-white@2x.png"  height="400" alt="Podnośnik widłowy">
+            </div>
+            <div class="IMG2">
+                <img src="img/forklift.png" alt="Podnośnik nożycowy">
+            </div>
+            <div class="Zawartosc">
+                <div class="flexkontener">
+                    <span class="zawartosc1">NAPRAWY • KONSERWACJA • PRZEGLĄDY</span><br>
+                    <span class="kontakt">Skontaktuj się z nami:</span><br>
+                    <span class="tel">785 556 987</span>
+                </div>
+            </div>
+
           </div>
-          <div class="div2"> 
-            <img src="img/forklift.png" alt="">
-          </div>
-          <div class="div3"> 
-            <h1>HYDRAULIKA PRZEMYSŁOWA</h1>
-          </div>
-          </div> 
+      </section>
+
+      <!-- ! Usługi -->
+
+      <section>
+
       </section>
       <script>
         document.addEventListener('DOMContentLoaded', () => {
