@@ -3,6 +3,11 @@
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 
+$navbarcolor: #f4f4f4;
+
+$navbar-background-color: $navbarcolor;
+$navbar-item-hover-background-color: $navbarcolor;
+
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/base/_all.sass";
 @import "../node_modules/bulma/sass/components/_all.sass";
