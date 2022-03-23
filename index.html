@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>HydroBar</title>
+    <title>HydroBar - Hydraulika przemysłowa w najlepszym wydaniu!</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@700&display=swap" rel="stylesheet"> 
 
     <link rel="stylesheet" href="css/mystyles.css">
@@ -21,54 +22,46 @@
 
     <!-- ! Pasek nawigacyjny -->
     
-    <nav class="navbar pasekNawigacyjny" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <h2 class="navbar-item navbar-firma">
-            HYDROBAR
-          </h2>
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
+    
+      <nav class="navbar pasekNawigacyjny" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <h2 class="navbar-item navbar-firma mgl">
+              HYDROBAR
+            </h2>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
       
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start"></div>
+            <div class="navbar-end">
+              <a class="navbar-item navlink">
+                  Strona Główna
+                </a>
+                <a class="navbar-item navlink" href="#uslugi">
+                  Usługi
+                </a>
+                <a class="navbar-item navlink">
+                  Uprawnienia
+                </a>
+                <a class="navbar-item navlink">
+                  Realizacje
+                </a>
+                <a class="navbar-item navlink">
+                  Kontakt
+                </a>
               </div>
-
-      
-          <div class="navbar-end">
-
-            <a class="navbar-item navlink">
-                Strona Główna
-              </a>
-        
-              <a class="navbar-item navlink" href="#uslugi">
-                Usługi
-              </a>
-
-              <a class="navbar-item navlink">
-                Uprawnienia
-              </a>
-              
-              <a class="navbar-item navlink">
-                Realizacje
-              </a>
-
-              <a class="navbar-item navlink">
-                Kontakt
-              </a>
-            </div>
-        </div>
-      </nav>
+          </div>
+        </nav>
 
       <!-- ! Baner -->
 
       <section>
         <div class="kontener">
-            <div class="Naglowek">
+            <div class="Naglowek mgl">
                 <h1 class="baner-nazwa">HYDRAULIKA PRZEMYSŁOWA</h1>
                 <h2 class="baner-podnazwa">PAWEŁ FIGIEL</h2>
             </div>
@@ -79,7 +72,7 @@
                 <img src="img/forklift.png" alt="Podnośnik nożycowy">
             </div>
             <div class="Zawartosc">
-                <div class="flexkontener">
+                <div class="flexkontener mgl">
                     <span class="baner-zawartosc1">NAPRAWY • KONSERWACJA • PRZEGLĄDY</span><br>
                     <span class="baner-kontakt">Skontaktuj się z nami:</span><br>
                     <span class="baner-tel">785 556 987</span>
@@ -89,54 +82,77 @@
           </div>
       </section>
 
-      <!-- ! Usługi -->
+      <!-- ! Usługi 1 -->
 
       <section>
-          <div class="uslugi-spacer" id="uslugi">
-            Nasze usługi
-          </div>
 
-      <h3 class="uslugi-h3">Konserwacja i przeglądy urządzeń podlegających UDT</h3>
-      <span class="uslugi-tekst">Uzupełnienie dokumentacji, obliczanie resursu, okresowa konserwacja, wpisy do dziennika konserwacji urządzeń hydraulicznych takich jak:</span>
-      <div class="uslugi-wrap">
-        <div class="uslugi-connector">
-          <ul class="uslugi-lista">
-            <li class="uslugi-lista-przedmiot">Żurawie przenośne (HDS)</li>
-            <li class="uslugi-lista-przedmiot">Wózki widłowe i teleskopowe</li>
-            <li class="uslugi-lista-przedmiot">Ładowarki teleskopowe</li>
-            <li class="uslugi-lista-przedmiot">Podnośniki samochodowe</li>
-            <li class="uslugi-lista-przedmiot">Podesty, hakowce, bramowce</li>
-            <li class="uslugi-lista-przedmiot">Dźwigniki</li>
-          </ul>
-          <div class="uslugi-button">
-            <button style="width: 100%; margin-left: 4rem;"class="button is-link is-outlined">Kontakt</button>
+        <div class="uslugi-spacer" id="uslugi">
+          Nasze usługi
+        </div>
+
+        <div class="uslugi-kontener">
+          <div class="uslugi1-naglowek mgl">
+            <h3 class="uslugi-h3">Konserwacja i przeglądy urządzeń podlegających UDT</h3>
+            <span class="uslugi-tekst">Uzupełnienie dokumentacji, obliczanie resursu, okresowa konserwacja, wpisy do dziennika konserwacji urządzeń hydraulicznych takich jak:</span>
+          </div>
+          <div class="uslugi1-zawartosc">
+            <div class="uslugi-connector mgl">
+              <ul class="uslugi-lista">
+                <li class="uslugi-lista-przedmiot">Żurawie przenośne (HDS)</li>
+                <li class="uslugi-lista-przedmiot">Wózki widłowe i teleskopowe</li>
+                <li class="uslugi-lista-przedmiot">Ładowarki teleskopowe</li>
+                <li class="uslugi-lista-przedmiot">Podnośniki samochodowe</li>
+                <li class="uslugi-lista-przedmiot">Podesty, hakowce, bramowce</li>
+                <li class="uslugi-lista-przedmiot">Dźwigniki</li>
+              </ul>
+              <div class="uslugi-button">
+                <button class="button is-link is-outlined uslugi-btn">Kontakt</button>
+              </div>
+            </div>
+          </div>
+          <div class="uslugi1img">
+            <img src="img/Mask Group 4.png" alt="Podnośnik">
           </div>
         </div>
-        <img src="img/Mask Group 4.png" width="700"height="100"alt="">
-      </div>
+      </section>
 
       <hr>
 
-      <h3 class="uslugi-h3">Konserwacja i przeglądy urządzeń podlegających UDT</h3>
-      <span class="uslugi-tekst">Uzupełnienie dokumentacji, obliczanie resursu, okresowa konserwacja, wpisy do dziennika konserwacji urządzeń hydraulicznych takich jak:</span>
-      <div class="uslugi-wrap">
-        <div class="uslugi-connector">
-          <ul class="uslugi-lista">
-            <li class="uslugi-lista-przedmiot">Żurawie przenośne (HDS)</li>
-            <li class="uslugi-lista-przedmiot">Wózki widłowe i teleskopowe</li>
-            <li class="uslugi-lista-przedmiot">Ładowarki teleskopowe</li>
-            <li class="uslugi-lista-przedmiot">Podnośniki samochodowe</li>
-            <li class="uslugi-lista-przedmiot">Podesty, hakowce, bramowce</li>
-            <li class="uslugi-lista-przedmiot">Dźwigniki</li>
-          </ul>
-          <div class="uslugi-button">
-            <button style="width: 100%; margin-left: 4rem; border-radius: 0;"class="button is-link is-outlined">Kontakt</button>
-          </div>
-        </div>
-        <img src="img/Mask Group 4.png" width="700"height="100"alt="">
-      </div>
+      <!-- ! Usługi 2 -->
 
-      </section>
+    <section>
+
+      <div class="uslugi2-kontener">
+        <div class="uslugi2-img">
+          <img style="margin-top: 4rem;" src="img/Zrzut ekranu 2022-03-18 o 21.38.05.png" alt="">
+        </div>
+        <div class="uslugi2-zawartosc">
+          <div class="uslugi2-wrapper">
+            <div>
+              <h3 class="uslugi2-h3">Naprawa hydrauliki przemysłowej,<br> maszyn i urządzeń</h3>
+              <ul class="uslugi-lista">
+                <li>agregaty hydrauliczne</li>
+                <li>bloki zaworowe przemysłowe i mobilne</li>
+                <li>rozdzielacze hydrauliczne</li>
+              </ul>
+              <div class="uslugi-button">
+                <button class="button is-link is-outlined uslugi-btn">Kontakt</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <div class="perm-kontener">
+      <div class="perm-zawartosc">
+        <div class="perm-wrapper"><span class="perm-tekst mgl">Dzięki olbrzymiemu doświadczeniu, wielu kursach i szkoleniach dysponuje wszystkimi niezbędnymi uprawnieniami do obsługi, konserwacji i przeglądów instalacji i urządzeń hydraulicznych.</span></div>
+      </div>
+      <div class="perm-naglowek">
+        <div class="uslugi-spacer" style="background-color: #E6E6E6; margin-top: 0;">Uprawnienia</div>
+      </div>
+    </div>
 
 
 
