@@ -4,9 +4,12 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 
 $navbarcolor: #f4f4f4;
+$control-border-width:4px;
+$link: #3F91DF;
 
 $navbar-background-color: $navbarcolor;
 $navbar-item-hover-background-color: $navbarcolor;
+$button-border-width: $control-border-width;
 
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/base/_all.sass";
