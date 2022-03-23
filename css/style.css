@@ -3,6 +3,7 @@
 }
 :root{
     --navbar: #f4f4f4;
+    --spacer: #E6E6E6;
     --accent: #3F91DF;
 }
 
@@ -20,7 +21,7 @@
 }
 .firma{
     font-size: 2rem;
-    margin-left: 1rem;
+    margin-left: 4rem;
     color: var(--accent);
     font-weight: 800;
 }
@@ -52,10 +53,10 @@
     font-weight: 700;
     color: black;
     font-family: 'Roboto', sans-serif;
-    margin-left: 7rem;
+    margin-left: 4rem;
 }
 .podnazwa{
-    margin-left: 7rem;
+    margin-left: 4rem;
     font-size: 3rem;
     color: var(--accent);
     font-family: 'Mukta Mahee', sans-serif;
@@ -66,7 +67,7 @@
     padding: 0.4rem 0.6rem 0.4rem 0.6rem;
     color:white;
     font-size: 2rem;
-    margin-left: 7rem;
+    margin-left: 4rem;
 }
 .flexkontener{
     display: flex;
@@ -74,7 +75,7 @@
     width: fit-content;
 }
 .kontakt{
-    margin-left: 7rem;
+    margin-left: 4rem;
     width: fit-content;
     margin-top: 5rem;
     font-size: 1.5rem;
@@ -83,11 +84,21 @@
     font-family: 'Roboto', sans-serif;
 }
 .tel{
-    margin-left: 7rem;
+    margin-left: 4rem;
     width: fit-content;
     font-size: 2.25rem;
     color:black;
     font-weight:700;
     text-decoration: underline;
     font-family: 'Roboto', sans-serif;
+}
+
+/* ! Usługi */
+.uslugi-spacer {
+    background-color: var(--spacer);
+    border-radius: 41px;
+    color: black;
+    margin: 1rem 2rem 1rem 2rem;
+    font-size: 1.60rem;
+    padding: 0.5rem 0 0.5rem 2rem;
 }
