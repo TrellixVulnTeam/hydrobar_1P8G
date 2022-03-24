@@ -247,6 +247,9 @@ body{
     .stopka-lista{
         color:black;
     }
+    .gmap_canvas{
+        height: 291px;
+    }
     
 }
 
@@ -483,7 +486,6 @@ body{
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                margin-bottom: 2rem;
             }
             .stopka-lista{
                 margin-left: 1.5rem
