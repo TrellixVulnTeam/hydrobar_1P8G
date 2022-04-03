@@ -18,11 +18,14 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+*::placeholder{
+  color:black;
+}
 
 /* ? Laptopy + */
 @media (min-width: 1260px) {
   .mgl {
-    margin-left: 4rem;
+    margin-left: 5rem;
   }
 
   /* ! Pasek nawigacyjny */
@@ -31,7 +34,7 @@ body {
   }
   .navlink {
     font-family: "Roboto", sans-serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 700;
     color: black;
     margin-right: 1rem;
@@ -74,12 +77,12 @@ body {
   }
 
   .baner-nazwa {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 700;
     color: black;
   }
   .baner-podnazwa {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--accent);
     font-family: "Mukta Mahee", sans-serif;
   }
@@ -134,6 +137,7 @@ body {
 
   .uslugi1img {
     grid-area: uslugi1img;
+    width: 75%;
   }
 
   .uslugi-spacer {
@@ -159,13 +163,13 @@ body {
     text-align: center;
   }
   .uslugi-button {
-    margin-top: 8rem;
+    margin-top: 3rem;
   }
   .uslugi-btn {
     justify-content: center;
     align-content: center;
-    font-size: 1.7rem;
-    width: 18rem;
+    font-size: 1.2rem;
+    width: 15rem;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
     border-radius: 0;
@@ -192,7 +196,7 @@ body {
     grid-template-columns: 0.55fr 0.45fr;
     grid-template-rows: 1fr;
     margin-bottom: 2rem;
-    gap: 0px 6rem;
+    gap: 0px 3rem;
     grid-auto-flow: row;
     grid-template-areas: "uslugi2-img uslugi2-zawartosc";
   }
@@ -200,6 +204,7 @@ body {
   .uslugi2-img {
     grid-area: uslugi2-img;
     justify-self: end;
+    width: 75%;
   }
 
   .uslugi2-zawartosc {
@@ -236,7 +241,7 @@ body {
 
   .perm-tekst {
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-right: 4rem;
   }
   .perm-wrapper {
@@ -265,9 +270,7 @@ body {
   }
   .stopka-lista {
     color: black;
-  }
-  .gmap_canvas {
-    height: 291px;
+    font-size: 1.4rem;
   }
 }
 
@@ -513,6 +516,11 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+      textarea, input {
+        width: 5rem;
       }
       .stopka-lista {
         margin-left: 1.5rem;

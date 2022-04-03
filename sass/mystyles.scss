@@ -6,10 +6,12 @@
 $navbarcolor: #f4f4f4;
 $control-border-width:4px;
 $link: #3F91DF;
+$input-border: #000;
 
 $navbar-background-color: $navbarcolor;
 $navbar-item-hover-background-color: $navbarcolor;
 $button-border-width: $control-border-width;
+$input-border-color: $input-border;
 
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/base/_all.sass";

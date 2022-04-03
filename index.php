@@ -1,3 +1,15 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "hydrobar_barlinek@wp.pl"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $subject = "Formularz kontaktowy";
+    $message = $from . " napisał:" . "\n\n" . $_POST['message'];
+
+    $headers = "Od:" . $from;
+    mail($to,$subject,$message,$headers);
+    echo "Wiadomość wysłana. Dziekujemy, " . $from . ", skontaktujemy się z tobą w krótce.";
+    }
+?>
 <!DOCTYPE html>
 <html lang="pl">
   <head>
@@ -49,7 +61,7 @@
                 <a class="navbar-item navlink">
                   Realizacje
                 </a>
-                <a class="navbar-item navlink">
+                <a class="navbar-item navlink" href="#kontakt">
                   Kontakt
                 </a>
               </div>
@@ -62,7 +74,7 @@
         <div class="kontener">
             <div class="Naglowek mgl">
                 <h1 class="baner-nazwa">HYDRAULIKA PRZEMYSŁOWA</h1>
-                <h2 class="baner-podnazwa">PAWEŁ FIGIEL</h2>
+                <h2 class="baner-podnazwa">Paweł Figiel | Barlinek</h2>
             </div>
             <div class="IMG1">
                 <img class="baner-img1-tablet" src="img/forklift-isolated-white@2x.png"  height="400" alt="Podnośnik widłowy">
@@ -75,7 +87,7 @@
                     <span class="baner-zawartosc1">NAPRAWY • KONSERWACJA • PRZEGLĄDY</span><br>
                     <div class="baner-kontakt-wrapper tablet-kontakt">
                       <span class="baner-kontakt">Skontaktuj się z nami:</span><br>
-                      <span class="baner-tel">785 556 987</span>
+                      <a href="tel:785-556-987"class="baner-tel">785 556 987</a>
                     </div>
                 </div>
             </div>
@@ -94,7 +106,7 @@
         <div class="uslugi-kontener">
           <div class="uslugi1-naglowek mgl">
             <h3 class="uslugi-h3">Konserwacja i przeglądy urządzeń podlegających UDT</h3>
-            <span class="uslugi-tekst">Uzupełnienie dokumentacji, obliczanie resursu, okresowa konserwacja, wpisy do dziennika konserwacji urządzeń hydraulicznych takich jak:</span>
+            <span class="uslugi-tekst">Uzupełnienie dokumentacji, obliczanie resursu, okresowa konserwacja, <br> wpisy do dziennika konserwacji urządzeń hydraulicznych takich jak:</span>
           </div>
           <div class="uslugi1-zawartosc">
             <div class="uslugi-connector mgl">
@@ -125,7 +137,7 @@
 
       <div class="uslugi2-kontener">
         <div class="uslugi2-img">
-          <img style="margin-top: 4rem;" src="img/Zrzut ekranu 2022-03-18 o 21.38.05.png" alt="">
+          <img style="margin-top: 1rem;" src="img/Zrzut ekranu 2022-03-18 o 21.38.05.png" alt="">
         </div>
         <div class="uslugi2-zawartosc">
           <div class="uslugi2-wrapper">
@@ -168,27 +180,14 @@
           <li>Email: hydrobar_barlinek@wp.pl</li>
         </ul>
       </div>
+      
       <div class="stopka-map-wrapper">
-        <div class="mapouter">
-          <div class="gmap_canvas"><iframe width="722" height="220" id="gmap_canvas"
-              src="https://maps.google.com/maps?q=52%C2%B011'21.5%2021%C2%B005'58.2&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-            <style>
-              .mapouter {
-                position: relative;
-                text-align: right;
-                width: 722px;
-              }
-            </style>
-              <style>
-                .gmap_canvas {
-                  overflow: hidden;
-                  background: none !important;
-                  width: 722px;
-                }
-              </style>
-          </div>
-        </div>
+        <form action="index.php" id="kontakt">
+        <input class="input is-medium is-link" type="email" name="email" placeholder="Adres Email">
+
+        <textarea class="textarea is-link" style="resize:none; width:70%; height: 170px; margin-top:1rem;" rows="10" name="message" cols="30" placeholder="Wiadomość"></textarea>
+        <input style="margin-top:1rem; width:8rem;"class="button is-link is-medium" type="submit" name="submit" value="Wyślij">
+        </form>
       </div>
     </footer>
 
